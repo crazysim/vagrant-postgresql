@@ -14,6 +14,7 @@ Vagrant::Config.run do |config|
       chef.add_recipe("apt")
       chef.add_recipe("postgresql::server")
       chef.add_recipe("phppgadmin")
+      chef.add_recipe("twu")
       chef.json = {
         :postgresql => {
           :version  => "9.1",
